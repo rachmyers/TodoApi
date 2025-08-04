@@ -69,7 +69,10 @@ public class TodoItemsController : ControllerBase
             return NotFound();
         }
 
-        return NoContent();
+        return CreatedAtAction(
+           nameof(GetTodoItem),
+           new { id = todoItem.Id },
+           ItemToDTO(todoItem));
     }
     // </snippet_Update>
 

@@ -8,13 +8,15 @@ builder.Services.AddControllers();
 builder.Services.AddDbContext<TodoContext>(opt =>
     opt.UseInMemoryDatabase("TodoList"));
 
+
+
 // Register CORS policy
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowFrontend",
         policy =>
         {
-            policy.WithOrigins("http://localhost:3000") // Allow frontend
+            policy.WithOrigins("http://localhost:5173") // Allow frontend
                   .AllowAnyMethod()
                   .AllowAnyHeader();
         });
