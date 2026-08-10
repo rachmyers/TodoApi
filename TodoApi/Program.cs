@@ -18,7 +18,7 @@ builder.Services.AddCors(options =>
         {
             if (builder.Build().Environment.IsDevelopment())
             {
-                policy.WithOrigins("http://localhost:5173") // Allow frontend in development
+                policy.WithOrigins("http://localhost:5173") // Allow frontend in local development
                       .AllowAnyMethod()
                       .AllowAnyHeader();
             }
