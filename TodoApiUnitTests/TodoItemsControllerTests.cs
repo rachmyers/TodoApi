@@ -16,7 +16,6 @@ namespace TodoApiUnitTests
                 Id = 1,
                 Name = "Complete unit testing setup",
                 IsComplete = true,
-                Secret = ""
             };
 
             //var context = new TodoContext();

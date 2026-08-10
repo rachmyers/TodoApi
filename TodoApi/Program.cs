@@ -16,9 +16,19 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowFrontend",
         policy =>
         {
-            policy.WithOrigins("http://localhost:5173") // Allow frontend
-                  .AllowAnyMethod()
-                  .AllowAnyHeader();
+            if (builder.Build().Environment.IsDevelopment())
+            {
+                policy.WithOrigins("http://localhost:5173") // Allow frontend in development
+                      .AllowAnyMethod()
+                      .AllowAnyHeader();
+            }
+            else
+            {
+                policy.WithOrigins("https://rachmyers.github.io/vite-to-do/") // Allow frontend in production
+                      .AllowAnyMethod()
+                      .AllowAnyHeader();
+            }
+
         });
 
 /*policy =>
