@@ -16,7 +16,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowFrontend",
         policy =>
         {
-            if (builder.Build().Environment.IsDevelopment())
+            if (builder.Environment.IsDevelopment())
             {
                 policy.WithOrigins("http://localhost:5173") // Allow frontend in local development
                       .AllowAnyMethod()
@@ -24,19 +24,11 @@ builder.Services.AddCors(options =>
             }
             else
             {
-                policy.WithOrigins("https://rachmyers.github.io/vite-to-do/") // Allow frontend in production
+                policy.WithOrigins("https://rachmyers.github.io") // Allow deployed frontend in production
                       .AllowAnyMethod()
                       .AllowAnyHeader();
             }
-
         });
-
-/*policy =>
-{
-    policy.WithOrigins("http://localhost:300") // Allow frontend
-          .AllowAnyMethod()
-          .AllowAnyHeader();
-})*/;
 });
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
