@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoApi", "TodoApi\TodoApi.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoApiUnitTests", "TodoApiUnitTests\TodoApiUnitTests.csproj", "{B7C4F4D9-AF0C-4B4A-9562-4C1D5779DD52}"
 EndProject
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "ItemsDB", "ItemsDB\ItemsDB.sqlproj", "{F64C4788-46E0-4750-957A-FD8D89C925D0}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,12 +21,6 @@ Global
 		{B7C4F4D9-AF0C-4B4A-9562-4C1D5779DD52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B7C4F4D9-AF0C-4B4A-9562-4C1D5779DD52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B7C4F4D9-AF0C-4B4A-9562-4C1D5779DD52}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F64C4788-46E0-4750-957A-FD8D89C925D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F64C4788-46E0-4750-957A-FD8D89C925D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F64C4788-46E0-4750-957A-FD8D89C925D0}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{F64C4788-46E0-4750-957A-FD8D89C925D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F64C4788-46E0-4750-957A-FD8D89C925D0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F64C4788-46E0-4750-957A-FD8D89C925D0}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
